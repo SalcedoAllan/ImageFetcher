@@ -35,6 +35,6 @@ public class PicsumImageFetcher: ObservableObject {
     }
 
     public func doSomnethingElse() {
-
+        
     }
 }
