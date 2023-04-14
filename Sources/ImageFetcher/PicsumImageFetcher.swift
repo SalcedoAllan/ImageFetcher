@@ -20,8 +20,8 @@ public class PicsumImageFetcher: ObservableObject {
         self.image = image
     }
 
-    public func fetchNewImage() async throws {
-        guard let url = URL(string: "https://picsum.photos/400/700") else {
+    public func fetchNewImage(urlString: String) async throws {
+        guard let url = URL(string: urlString) else {
             throw RequestError.invalidURL
         }
         let urlRequest = URLRequest(url: url)
